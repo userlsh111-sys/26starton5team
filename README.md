@@ -20,9 +20,13 @@
 * 💻 **투표소 관리자 (노트북/웹캠):** 
   * 보안 및 카메라 권한 확보를 위해 투표소 기기(로컬망)에서 직접 접속(`http://localhost:8080/certificate.html`)합니다.
   * 유권자의 스마트폰 QR을 스캔하여 즉시 유효성을 검증하고 해당 선거구를 화면에 출력합니다.
+  * 서버(인텔리제이 등 IDE서 DB_PASSWORD 환경변수 설정 요망)와 가상 터미널(ngrok http 8080)을 작동시켜놓습니다.
 
 ## 4. 활용 기술
 * **Backend:** Java, Spring Boot, Spring Data JPA
 * **Database:** MySQL (테스트용 서울/인천 선거구 해시 더미 데이터 30건 구축 완료)
 * **Frontend:** HTML5, CSS, Vanilla JS (qrcode.js, html5-qrcode)
 * **Security:** SHA-256 (단방향 해시 암호화)
+
+UI 참고: 경향신문(신한은행, 시니어 맞춤 ATM 전국 확대…시니어 수수료도 면제 / 2022.01.06)<br>
+Logic review, debugging were supported by Google Gemini Pro.
